@@ -9,7 +9,7 @@ function Filme(){
 
     return(
         <div className="containers"> 
-            <h1 className="titles">meu produto é {id}</h1>
+            <h1 className="titles">Detalhe do filme: {id}</h1>
         </div>
     );
 }

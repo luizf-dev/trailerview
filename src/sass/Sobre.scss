@@ -4,3 +4,17 @@
 .title-sobre{
     color: #fff;
 }
+
+.box-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    max-width: 300px;
+    background-color: $first-color;
+    margin-top: 5px;
+    padding: 10px;
+}
