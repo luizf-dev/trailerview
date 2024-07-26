@@ -6,4 +6,60 @@
     padding: 5px;
 }
 
+.filmes{
+    max-width: 250px;
+}
+
+section{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 30px;
+    padding: 10px 0 30px 5px;
+    min-height: 80vh;
+}
+
+img{
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 1px #fff;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $first-color;
+    padding: 5px;
+}
+
+.filme-title{
+    color: $third-color;
+    display: block;
+    text-align: center; //_ Torna o <strong> um bloco para controle de largura */
+    width: 100%; //_ Ocupa toda a largura do contêiner pai */
+    overflow: hidden; //_ Oculta o texto que ultrapassa a largura */
+    text-overflow: ellipsis; //_ Adiciona reticências ao texto que ultrapassa a largura */
+    white-space: nowrap; //_ Impede a quebra de linha */
+}
+
+@media screen and (max-width: 500px) {
+    
+    .title{
+        font-size: 1rem;
+    }
+
+    .filmes{
+        max-width: 150px;
+    }
+
+    section{
+        min-height: 50vh;
+    }
+
+    img{
+        max-width: 150px;
+    }
+}
+
 

@@ -1,6 +1,6 @@
 @import 'Variaveis';
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Permanent+Marker&family=Playpen+Sans:wght@100..800&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 html{
-    font-family: "Bona Nova SC";
+    font-family: "Playpen Sans", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -19,9 +19,16 @@ a{
 }
 
 .titles{
-    color: #000;
+    color: #fff;
     background-color: $first-color;
     padding: 10px;
+}
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 body{
@@ -29,6 +36,17 @@ body{
 }
 
 .container{
-    min-height: 100vh;
+    display: flex;    
+    flex-direction: column;
+    gap: 15px;
+    max-height: 100vh;
     padding: 100px 0 0 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container{
+        padding: 100px 0 0 10px;
+    }
+    
 }
