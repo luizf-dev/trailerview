@@ -1,0 +1,36 @@
+@import 'Variaveis';
+
+
+.container-erro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.title-erro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $second-color;
+    border-left: 15px solid $first-color;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+span{
+    color: $first-color;
+}
+
+strong{
+    color: red;
+}
+
+.link-home{
+    color: $first-color;
+    text-decoration: underline;
+}
+

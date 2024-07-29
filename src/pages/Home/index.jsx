@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import { BookmarkCheck, Star } from 'lucide-react';
 
 
+
 function Home() {
 
 
@@ -14,6 +15,7 @@ function Home() {
     useEffect(()=> {
 
       async function loadFilmes(){
+        
 
         const response = await api.get("movie/now_playing", {
           params:{
@@ -44,7 +46,7 @@ function Home() {
                 <div className='details'> 
                   <Star size={28}></Star> 
                   <span style={{color:"white"}}>{filmes.vote_average.toFixed(1)}</span> 
-                  <BookmarkCheck></BookmarkCheck>               
+                                
                 </div>
                 <strong className='filme-title'>{filmes.title}</strong>
               </div>
