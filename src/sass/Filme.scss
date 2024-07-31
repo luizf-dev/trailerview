@@ -1,0 +1,72 @@
+@import 'Variaveis';
+
+
+.container-filme{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding: 100px 0 0 30px;
+}
+
+.poster{
+    max-width: 300px;
+    border-radius: 8px;    
+    box-shadow: 2px 1px 100px 1px $first-color;
+}
+
+.descricao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 2px;
+    padding: 5px;
+}
+
+.ficha-tecnica{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title-details, .ficha-tecnica > h2{
+    color: $first-color;
+}
+
+.sinopse, .ficha-tecnica{
+    color: #fff;
+}
+
+.ficha-tecnica h2{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .container-filme{
+        flex-direction: column;       
+        align-items: center;
+        padding:100px 10px 10px 10px;
+    }
+
+    .descricao{
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ficha-tecnica{
+        width: 100%;
+    }
+
+    .poster{
+        max-width: 100%;
+    }
+
+    
+    
+}
+

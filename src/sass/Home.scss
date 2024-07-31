@@ -19,7 +19,7 @@ section{
     min-height: 80vh;
 }
 
-img{
+.poster-home{
     max-width: 250px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px 1px #fff;
@@ -57,7 +57,7 @@ img{
         min-height: 50vh;
     }
 
-    img{
+    .poster-home{
         max-width: 150px;
     }
 }

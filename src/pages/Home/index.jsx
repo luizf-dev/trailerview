@@ -40,8 +40,8 @@ function Home() {
           {filmes.map((filmes) => {
             return(
               <div key={filmes.id} className='filmes'>
-                <Link to={"/filme/"+filmes.id}> 
-                  <img src={"https://image.tmdb.org/t/p/w500/" +filmes.poster_path} alt={filmes.title} />
+                <Link to={`/filme/${filmes.id}`}> 
+                  <img className='poster-home' src={"https://image.tmdb.org/t/p/w500/" +filmes.poster_path} alt={filmes.title} />
                 </Link>
                 <div className='details'> 
                   <Star size={28}></Star> 
