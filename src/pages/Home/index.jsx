@@ -11,7 +11,6 @@ function Home() {
 
     const [filmes, setFilmes] = useState([]);
 
-
     useEffect(()=> {
 
       async function loadFilmes(){
@@ -52,25 +51,7 @@ function Home() {
               </div>
             );
           })}
-        </section>
-        <h2 className="title">Minha Lista</h2>      
-        <section>
-          {filmes.map((filmes) => {
-            return(
-              <div key={filmes.id} className='filmes'>
-                <Link to={`/filme/${filmes.id}`}> 
-                  <img src={"https://image.tmdb.org/t/p/w500/" +filmes.poster_path} alt={filmes.title} />
-                </Link>
-                <div className='details'> 
-                  <Star size={28}></Star> 
-                  <span style={{color:"white"}}>{filmes.vote_average}</span> 
-                  <BookmarkCheck></BookmarkCheck>               
-                </div>
-                <strong className='filme-title'>{filmes.title}</strong>
-              </div>
-            );
-          })}
-        </section>
+        </section>     
       </div>
     );
   }

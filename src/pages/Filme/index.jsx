@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import '../../sass/Filme.scss';
 import YouTubePlayer from "../../components/YouTubePlayer";
+//import getVideos from "../../services/api";
 
 
 
 function Filme(){
 
     const {id} = useParams();
-    const [filme, setFilme] = useState([]);
+    const [filme, setFilme] = useState([]);    
 
     useEffect(()=> {
         async function loadFilme(){
+            
             await api.get(`/movie/${id}`, {
                 params: {
                     api_key: '6bde1d67731ced1a7efeab91daa4a7fc',
@@ -28,8 +30,7 @@ function Filme(){
         }
 
     loadFilme();
-    }, []);
-
+    }, [id]);
 
 
     return(
@@ -39,7 +40,7 @@ function Filme(){
                 <h2 className="title-details">{filme.title}</h2> 
                 <h4 className="title-details">Sinopse:</h4>
                 <p className="sinopse">{filme.overview}</p>   
-                <YouTubePlayer videoId={'3f2g4RMfhS0'}/>                
+                <YouTubePlayer videoId={id} />             
            </div>
             <div className="ficha-tecnica">
               <h2>Título Original:</h2>
