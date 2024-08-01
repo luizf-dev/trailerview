@@ -7,7 +7,7 @@
 }
 
 .filmes{
-    max-width: 250px;
+    max-width: 200px;
 }
 
 section{
@@ -16,11 +16,10 @@ section{
     white-space: nowrap;
     gap: 30px;
     padding: 10px 0 30px 5px;
-    min-height: 80vh;
 }
 
 .poster-home{
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px 1px #fff;
 }
@@ -41,6 +40,7 @@ section{
     overflow: hidden; //_ Oculta o texto que ultrapassa a largura */
     text-overflow: ellipsis; //_ Adiciona reticências ao texto que ultrapassa a largura */
     white-space: nowrap; //_ Impede a quebra de linha */
+    font-size: 10px;
 }
 
 @media screen and (max-width: 500px) {

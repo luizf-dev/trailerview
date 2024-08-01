@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     width: 100%;
     height: 70px;
     position: fixed;
@@ -16,6 +17,33 @@
     color: $first-color;
 }
 
+.logo{
+    display: flex;
+    gap: 15px;
+}
+
+.links-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media screen and (max-width: 400px){
+
+    .navbar{
+        justify-content: center;
+    }
+    
+    .home-icon, .back-icon{
+        display: none;
+    }
+
+
+
+
+}
 
 @media screen and (max-width: 468px) {
 

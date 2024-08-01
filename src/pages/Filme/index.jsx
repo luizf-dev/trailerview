@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import '../../sass/Filme.scss';
 import YouTubePlayer from "../../components/YouTubePlayer";
-//import getVideos from "../../services/api";
-
+import { CircleArrowLeft } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 
 function Filme(){
@@ -34,10 +34,10 @@ function Filme(){
 
 
     return(
-        <div className="container-filme"> 
+        <div className="container-filme">
             <img className="poster" src={"https://image.tmdb.org/t/p/w500/" +filme.poster_path} alt={filme.title} />                            
             <div className="descricao">
-                <h2 className="title-details">{filme.title}</h2> 
+                <h2 className="title-details">{filme.title}</h2>                          
                 <h4 className="title-details">Sinopse:</h4>
                 <p className="sinopse">{filme.overview}</p>   
                 <YouTubePlayer videoId={id} />             

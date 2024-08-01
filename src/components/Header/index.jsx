@@ -1,4 +1,4 @@
-import { SquarePlay } from "lucide-react";
+import { CircleArrowLeft, SquarePlay, House } from "lucide-react";
 import { Link } from "react-router-dom";
 import '../../sass/Navbar.scss';
 
@@ -7,10 +7,17 @@ import '../../sass/Navbar.scss';
 function Header(){
     return(
         <nav className="navbar">
-            <Link to="/"><SquarePlay className="logo-icon" size={36}></SquarePlay></Link>
-            <Link to="/"><h1 className="title-header">TrailerView</h1></Link>
-            <Link to="/sobre"><h4 className="title-sobre">Sobre</h4></Link>
-        </nav>
+            <div className="home-icon">
+                <Link to="/"><House className="house links-footer" size={36}/></Link>
+            </div>
+            <div className="logo">
+                <Link to="/"><SquarePlay className="logo-icon" size={36}></SquarePlay></Link>
+                <Link to="/"><h1 className="title-header">TrailerView</h1></Link>
+            </div>
+            <div className="back-icon">
+                <Link to="/"><CircleArrowLeft style={{color: '#fff'}} size={24}></CircleArrowLeft></Link>         
+            </div>                       
+         </nav>
     );
 }
 

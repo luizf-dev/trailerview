@@ -2,7 +2,7 @@ import '../../sass/Home.scss';
 import { useEffect, useState } from 'react';
 import api from '../../services/api';
 import {Link} from "react-router-dom";
-import { BookmarkCheck, Star } from 'lucide-react';
+import { BookmarkCheck, CircleArrowRight, Star } from 'lucide-react';
 
 
 
@@ -44,8 +44,7 @@ function Home() {
                 </Link>
                 <div className='details'> 
                   <Star size={28}></Star> 
-                  <span style={{color:"white"}}>{filmes.vote_average.toFixed(1)}</span> 
-                                
+                  <span style={{color:"white"}}>{filmes.vote_average.toFixed(1)}</span>                                 
                 </div>
                 <strong className='filme-title'>{filmes.title}</strong>
               </div>
