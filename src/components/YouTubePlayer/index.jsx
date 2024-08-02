@@ -49,7 +49,7 @@ function YouTubePlayer(){
         {videoId ? (
           <YouTube videoId={videoId} />
         ) : (
-          <p>Carregando trailer...</p>
+          <p className="titles">Trailer não disponível...</p>
         )}
       </div>
     );

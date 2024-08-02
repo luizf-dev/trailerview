@@ -29,6 +29,11 @@
     gap: 30px;
 }
 
+.back-info-icons{
+    display: flex;
+    gap: 10px;
+}
+
 
 @media screen and (max-width: 400px){
 
@@ -36,13 +41,9 @@
         justify-content: center;
     }
     
-    .home-icon, .back-icon{
+    .home-icon, .back-info-icons{
         display: none;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 468px) {

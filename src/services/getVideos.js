@@ -1,10 +1,11 @@
 import api from "./api";
+import apiKey from "./config";
 
 async function getVideos(id) {
   try {
     const response = await api.get(`/movie/${id}/videos`, {
       params: {
-        api_key: '6bde1d67731ced1a7efeab91daa4a7fc',
+        api_key: apiKey,
         language: 'pt-BR',
       },
     });
