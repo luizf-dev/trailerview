@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../../services/api";
-import apiKey from "../../services/config"; 
+//import apiKey from "../../services/config"; 
 import '../../sass/Filme.scss';
 import YouTubePlayer from "../../components/YouTubePlayer";
 
@@ -12,6 +12,8 @@ function Filme(){
 
     useEffect(()=> {
         async function loadFilme(){
+
+            const apiKey = '6bde1d67731ced1a7efeab91daa4a7fc';
             
             await api.get(`/movie/${id}`, {
                 params: {
