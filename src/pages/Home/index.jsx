@@ -1,7 +1,7 @@
 import '../../sass/Home.scss';
 import { useEffect, useState } from 'react';
 import api from '../../services/api';
-//import apiKey from '../../services/config';
+import apiKey from '../../services/config';
 import {Link} from "react-router-dom";
 import { Star } from 'lucide-react';
 
@@ -14,17 +14,14 @@ function Home() {
 
     useEffect(()=> {
 
-      async function loadFilmes(){    
-            
-        const apiKey = '6bde1d67731ced1a7efeab91daa4a7fc';
-
+      async function loadFilmes(){           
+        
         const response = await api.get("movie/now_playing", {
           params:{
             api_key: apiKey,
             language: "pt-BR"            
           }
         })
-        //console.log(response.data.results);
         setFilmes(response.data.results);
       }
 

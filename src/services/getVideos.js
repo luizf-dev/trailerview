@@ -1,9 +1,8 @@
 import api from "./api";
-//import apiKey from "./config";
+import apiKey from "./config";
 
 async function getVideos(id) {
-
-  const apiKey = '6bde1d67731ced1a7efeab91daa4a7fc';
+  
   try {
     const response = await api.get(`/movie/${id}/videos`, {
       params: {
